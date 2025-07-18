@@ -1,0 +1,27 @@
+Assembler Features
+
+* Basic data types
+    - Integers
+        > data of 1, 2 or 4 bytes
+        > data and directions (pointers)
+    - Reals (floating point): 4,8 or 10 bytes
+    - Does not include structured types
+        > They are encoded as contiguously stored data
+        > It has addressing modes to manipulate them
+
+* Primitive Operations 
+    - Arithmetic/logical operations on registers and data in memory
+    - Data transfer between  memory and register bank
+    - Conditional and unconditional jumps (to/from procedures)
+
+Programmer Vision
+
+* What do we need to study?
+    - Memory space
+    - Available registers
+    - Set of instructions: what they do, how they are coded, how long they take...
+    - Types and representation of data
+    - Addressing modes
+    - Instruction sequencing
+    - Communication with the outside
+    
