@@ -1,0 +1,7 @@
+Programmer Vision
+
+* Memory Space
+    - Linear space of 2^32 ppositions of 1 byte: [0-2^32-1]
+    - Protected Mode/ Memory Flat Model / Little Endian
+
+![Basic Data Types](image-1.png)

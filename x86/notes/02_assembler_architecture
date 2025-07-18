@@ -1,0 +1,16 @@
+Assembler Architecture
+
+* EIP: Program counter. Points to the next instruction to be executed.
+
+* Registers: They are very frequently used as quick access variable.
+
+* Condition codes:
+    - They store information regarding the behavior of the last executed instruction.
+    - They are used in coditional jumps.
+
+* Memory:
+    - Byte-addressable vector, Little Endian.
+    - Code, user data, OS data
+    - Stact to support subrutine management.
+
+![Assembler Architecture](image.png)
