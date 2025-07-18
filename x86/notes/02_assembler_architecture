@@ -12,5 +12,3 @@ Assembler Architecture
     - Byte-addressable vector, Little Endian.
     - Code, user data, OS data
     - Stact to support subrutine management.
-
-![Assembler Architecture](image.png)

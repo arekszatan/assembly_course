@@ -1,0 +1,17 @@
+Basic Data Types
+
+* Natural Range
+    - byte: 0 <= x <= 255
+    - word: 0 <= x <= 65.535
+    - longword: 0 <= x <= 4.294.967.215
+
+* Integer Range
+    - byte: -128 <= x <= 127
+    - word: -32.768 <= x <= 32.767
+    - longword: -2.147.483.648 <= x <= 2.147.483.647
+
+* Real Range (IEEE 754)
+    - Simple precision (32 bits, 24 precision): 1,18*10^-38 <= x <= 3,40*10^38
+    - Double precision (64 bits, 53 precision): 2,23*10^-308 <= x <= 1,79*10^308
+    - Extended double precision (80 bits, 64 precision): 3,37*10^-4932 <= x <= 1,18*10^4932
+

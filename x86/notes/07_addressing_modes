@@ -1,0 +1,12 @@
+Addresing Modes
+
+* Immediate $19, $-3, $0x2A, $0x2A45, $0x2A45D1C3  
+    - Codified with 1, 2 or 4 bytes.
+
+* Register: %eax, %ah, %esi
+
+* Memory: D(Rb, Ri, s) -> M[Rb+Ris+D]
+    - D: displacement coded with 1, 2 or 4 bytes.
+    - Rb: base register. Any of the 8 registers.
+    - Ri: index register. Anyone except %esp
+    - S: scale factor: 1, 2, 4 or 8.
