@@ -1,0 +1,15 @@
+Assembly language is a low-level programming language for a computer or other programmable device specific to a
+particular computer architecture in contrast to most high_level programming languages, which are generally portable
+across multiple systems. Assembly language is converted into executable machine code by a utility program referred to
+as an assembler like NASM, Masm, et.
+
+Audience:
+This tutorial has been designed for those who want to learn the basics of assembly programming for scratch. This
+tutorial will give you enough understanding on assembly programming from where you can take yourself to higher
+levels of expertise.
+
+Prerequisites:
+Before proceeding with this tutorial, you should hava a basic understanding of Computer Programming terminologies. A
+basic understanding of any of the programming languagues will ehlp you in understanding the Assembly programming
+concepts and move fast on the learning track.
+

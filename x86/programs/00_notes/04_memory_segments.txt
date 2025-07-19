@@ -1,0 +1,21 @@
+We have already discussed the three sections of an assembly program. These sections represent various memory
+segments as well.
+
+Interestingly, if you replace the section keyword with segmant, you will get the same result. Try the following code:
+~~~
+
+# Memory Segments 
+Asegmented memory modal deivides the system memory into groups of independent segments referenced by pointers
+located in the segment register. Each segment is used to contain a specific type of data. One segment is used to 
+contain instruction codes, another segment stores the data elements, and a third segment keeps the program stack.
+
+In the light of the above discussion, we can specify various memory segments as:
+	* Data segments - It is represented by .data section and the .bss. The .data section is used to declare the
+	memory region, where data elements are stored for the program. This section cannot be expanded after the 
+	data elements are declared, and it remains static throughout the program.
+	The .bss section is also a static memory section that contains buffer for data to be declared later in the
+	program. This buffeer memory is zero_filled.
+	* Code segment - It is represented by .text section. This defines an area in memory that stores the instruction
+	code. This is also a fixed area.
+	* Stack - This segment contains data values passed to functions and procedures within the program.
+ 
