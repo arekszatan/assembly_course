@@ -1,0 +1,61 @@
+The processor instruction set provides the instructions AND, OR, XOR, TEST, and NOT Boolean logic, which tests, sets, and clears
+the bits according to the need of the program.
+
+The format for these instructions:
+	* AND * AND operand1, operand2
+	* OR * OR operand1, operand2
+	* XOR * XOR operand1, operand2
+	* TEST * TEST operand1, operand2
+	* NOT * NOT operand
+
+The first in all the cases could be either in register or in memory. The second operand could be either in register
+memory or an immediate (constant) value. However, memory-to-memory operations are not possible. These instructions
+compere or match bits of the operands and set the CF, OF, PF, SF, and ZF flags.
+
+# The AND instruction
+The AND operation can be used for clearing one or more bits. FOr example, say the BL register contains 0011 1010. If you need
+to clear the high-order bits to zero, you AND it with 0FH.
+	AND BL, 0FH
+Let's take up another example. If you want to check whether a given number is odd or even, a simple test would be to check the 
+least significant bit of the number. If this is 1, the number is odfd, else the number is even.
+
+Assuming the number is in AL register, we can write:
+	AND AL, 01H
+	IZ EVEN_NUMBER
+
+# The OR Instruction
+The OR instuction is used for supporting logical expression by performing bitwise OR operation. The bitwise OR operator
+returns1, if the matching bits from either or both operands are one. It returns 0, if both the bits are zero.
+
+For example:
+	Operand1: 0101
+	Operand2: 0011
+After OR -> Operand1: 0111
+
+The OR operation can be used for setting one or more bits. FOr example, let us assume the AL register contains 0011 1010, you
+need to set the four low-order bits, you can OR it with value 0000 1111, i.e., FH.
+	OR BL, 0FH
+Example 
+The following example demonstrates the OR instruction. Let us store th evalue 5 and 3 in the AL and BL registers,
+respectively, then the instruction,
+	OR AL, BL
+should store 7 in the AL register.
+
+# The COR Instruction
+The XOR instruction implements the bitwise XOR operation. The XOR operation sets the resultant bit to 1, if and only if the bits
+from the operands are different. If the bits from operands are same (both 0 or both 1), the resultant bit is cleard to 0.
+For example:
+	Operand1: 0101
+	Operand2: 0011
+After XOR -> Operand1: 0110
+
+XORing an operand with itsself changes the operand to 0. This is used to clear a register.
+	XOR EAX, EAX
+
+# The test Instruction
+The TEST instruction implements the bitwise NOT operation. NOT operation reverses the bits in an operand. The operand could
+be either in a register or in the memory.
+	Operand1: 0101 0011
+After NOT -> Operand1: 1010 1100
+
+	
